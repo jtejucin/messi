@@ -1,25 +1,28 @@
-from pickle import APPENDS
+from operator import inv
 
 
-numbers = [10, 5 , 7 , 2 ,1 ]
-print (numbers)
+invitados =[]
+invitados.append(input("nombre del invitado"))
+print(invitados)
 
-numbers [0] = 111
-print (numbers) 
+otro=input("desea agrregar otro s/n: ")
 
-numbers [4] = numbers[0]
-print (numbers)
+while otro == "s":
+    invitados.append(input("nombre del invitado"))
+    print(invitados)
+    otro=input("desea agregar otro s/n:")
+    
+print("usted tiene",len(invitados), "invitados")
+invitados.sort()
+print (invitados)
 
 
-print (numbers[2])
+nombre= input("digite su nmobre")
+lista=[]
 
-print(len(numbers))
+for i in nombre: 
+    lista.append(i)
+    
 
-numbers.append(8.9)
-print (numbers)
-
-deportesx =[]
-deportesx.append(input("deporte favorito"))
-
-del numbers[1]
-print (numbers)
+print("su nombre tiene", len(lista), "caracteres")
+print(lista)
